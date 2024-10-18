@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotobuks</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-gray-800 text-white flex flex-col justify-between">
+            <div class="p-6">
+                <h1 class="text-3xl font-bold mb-10">Fotobuks logo</h1>
+                <nav class="space-y-6">
+                    <a href="#" class="block text-lg">Menu</a>
+                    <a href="#" class="block text-lg">Fotógrafos</a>
+                    <a href="#" class="block text-lg">Clientes</a>
+                    <a href="#" class="block text-lg">Álbumes</a>
+                </nav>
+            </div>
+            <div class="p-6">
+                <button class="bg-red-600 w-full py-2 rounded-lg">Salir</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-4/5">
+            <header class="flex items-center justify-between bg-white py-4 px-8 shadow-md">
+                <div class="flex items-center">
+                    <input type="text" placeholder="Buscador" class="border border-gray-300 p-2 rounded-lg w-96">
+                </div>
+                <div>
+                    <a href="#" class="text-lg">Perfil</a>
+                </div>
+            </header>
+
+            <!-- Table -->
+            <div class="p-8">
+                <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+                    <table class="min-w-full table-auto">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="px-6 py-4 text-left">Nombre</th>
+                                <th class="px-6 py-4 text-left">Apellidos</th>
+                                <th class="px-6 py-4 text-left">Teléfono</th>
+                                <th class="px-6 py-4 text-left">Evento</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body" class="divide-y divide-gray-200">
+                            <!-- Dynamic data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
